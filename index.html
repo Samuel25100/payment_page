@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="payment_con">
+            <h1>Choose your payment method</h1>
+            <div class="payments">
+                <div class="radio_card cards">
+                    <div class="payment_type">
+                        <input type="radio" name="select_card" id="select_card">
+                        <p>Card Payment</p>
+                    </div>
+                    <div class="payments_icon">
+                        <img  class="visa" src="assets/visa.png" alt="visa">
+                        <img  class="visa" src="assets/mastercard.png" alt="mastercard">
+                    </div>
+                </div>
+                <div class="card_payment">
+                    <div class="card_details">
+                        <h3>Card Number*</h3>
+                        <div class="card_num">
+                            <img class="card_icon" src="assets/card.png" alt="card">
+                            <input id="card_in" type="text">
+                            <img class="lock_icon" src="assets/padlock.png" alt="lock">
+                        </div>
+                    </div>
+                    <div class="expiration_cvv">
+                        <div class="expiration_con">
+                            <h3>Expiration Date*</h3>
+                            <div class="expiration">
+                                    <select name="months" id="months">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    </select>
+                                    <select name="years" id="years">
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    </select>
+                            </div>
+                            
+                        </div>
+                        <div class="ccv">
+                            <h3>Security code</h3>
+                            <div class="ccv_in">
+                                <input type="tel" id="security_code" maxlength="4" size="8">
+                                <img src="assets/padlock.png" alt="lock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pay_con">
+                        <button>Pay Now</button>
+                    </div>
+                </div>
+                <div class="radio_card paypal">
+                    <div class="payment_type">
+                        <input type="radio" name="select_card" id="select_paypal">
+                        <p>Pay by PayPal</p>
+                    </div>
+                    <div class="payments_icon">
+                        <img class="paypal_ic"  src="assets/paypal.png" alt="paypal">
+                    </div>
+                </div>
+                <div class="paypal_payment"></div>
+            </div>
+        </div>
+        <div class="more_inf"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

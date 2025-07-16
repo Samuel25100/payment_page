@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*__________________Payment Container__________________*/
+.payment_con {
+    text-align: center;
+    width: 46%;
+    height: 200px;
+    /*border: 1px solid blue;*/
+}
+
+/*   radio input    */
+.radio_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    height: 70px;
+    border-top: 1px solid #0e0e0e2e;
+    margin-top: 5px;
+}
+
+.paypal {
+    border-top: 1px solid #0e0e0e2e;
+    margin-top: 5px;
+}
+
+.payment_type {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.payment_type input[type=radio] {
+    width: 30px;
+    height: 30px;
+    border: 0.2px solid #0e0e0e2e;
+}
+
+.payment_type p {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
+/*  payments icons   */
+.payments_icon {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 5px;
+}
+
+
+.payments_icon .visa {
+    width: 30px;
+    height: 24px;
+    border: 1px solid #0e0e0e2e;
+    box-shadow: #0e0e0e2e;
+    padding: 3px;
+}
+
+.payments_icon .paypal_ic {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e2e2e2;
+    box-shadow: #0e0e0e2e;
+    padding: 3px;
+}
+
+/*       Card payments details         */
+.card_details {
+    margin: 10px 0 10px 0;
+}
+
+.card_payment {
+    display: none;
+    width: 100%;
+    /*border: 1px solid blue;*/
+    text-align: start;
+    margin-left: 55px;
+}
+
+.card_payment h3 {
+    font-size: 16px;
+}
+/*   Card Number   */
+.card_num{
+    display: flex;
+    align-items: center;
+    width: 89%;
+    border: 1px solid rgb(118, 118, 118);
+    background-color: white;
+    border-radius: 10px;
+    height: 48px;
+}
+.card_icon {
+    margin-left: 5px;
+    width: 36px;
+    height: 36px;
+}
+
+#card_in[type="text"] {
+    display: flex;
+    width: 87%;
+    height: 60%;
+    border: 1px solid white;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#card_in[type="text"]:focus {
+    border: none;
+    outline: none;
+}
+
+.lock_icon {
+    width: 24px;
+    height: 24px;
+}
+
+/*         Expiration date         */
+.expiration_cvv {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+    width: 89%;
+    gap: 30%;
+}
+
+.expiration {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.expiration_cvv #months {
+    width:  102px;
+    height: 40px;
+    border-radius: 9px 0 0 9px;
+    padding-left: 20px;
+}
+.expiration_cvv #years {
+    width: 102px;   /*77%*/
+    height: 40px;
+    border-radius: 0 9px 9px 0;
+    padding-left: 20px;
+}
+
+/*         Security code         */
+.ccv_in {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 9px;
+    width: 214px;   /*77%*/
+    height: 40px;
+    padding-left: 20px;
+}
+
+#security_code {
+    width: 186px;
+    border: none;
+}
+
+#security_code:focus {
+    border: none;
+    outline: none;
+}
+
+
+/*         Pay Now btn             */
+.pay_con {
+    display: flex;
+    width: 89%;
+    height: 40px;
+    justify-content: center;
+    margin: 0 5px 0 5px;
+}
+
+.pay_con button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.pay_con button:hover {
+    width: 52%;
+    height: 40.5px;
+    border-radius: 20.2px;
+    
+}
+
+
+
+
+/*__________________More Info Container__________________*/
+.more_inf {
+    width: 46%;
+    height: 200px;
+    /*border: 1px solid blue;*/
+}
+
