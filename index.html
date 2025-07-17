@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pay Here</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
 </head>
 <body>
     <div class="main">
@@ -26,8 +27,8 @@
                         <h3>Card Number*</h3>
                         <div class="card_num">
                             <img class="card_icon" src="assets/card.png" alt="card">
-                            <input id="card_in" type="text">
-                            <img class="lock_icon" src="assets/padlock.png" alt="lock">
+                            <input id="card_in" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="19" placeholder="1234 5678 9012 3456">
+                            <img class="eye_icon" src="assets/hide.png" alt="hide">
                         </div>
                     </div>
                     <div class="expiration_cvv">
@@ -81,11 +82,28 @@
                         <img class="paypal_ic"  src="assets/paypal.png" alt="paypal">
                     </div>
                 </div>
-                <div class="paypal_payment"></div>
+                <div class="paypal_payment">
+                    <div class="paypal_detail">
+                        <h3>Paypal email</h3>
+                        <div class="paypal_con">
+                            <input type="email" id="paypal_email" placeholder="example@mail.com">
+                        </div>
+                    </div>
+                    <div class="pay_con">
+                        <button>Pay Now</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="more_inf"></div>
+        <div class="more_inf">
+            <h1>Items details</h1>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
+<script>
+  new Cleave('#card_in', {
+    creditCard: true
+  });
+</script>
 </html>
