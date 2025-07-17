@@ -188,7 +188,7 @@
 
 /*         Pay Now btn             */
 .pay_con {
-    display: flex;
+    display: none;
     width: 89%;
     height: 40px;
     justify-content: center;
@@ -219,11 +219,11 @@
 .paypal_payment {
     display: none;
     width: 93%;
-    text-align: start;
+    text-align: center;
     margin-left: 55px;
 }
 .paypal_detail {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 20px;
     margin: 10px 0 10px 0;
@@ -234,7 +234,7 @@
 }
 
 .paypal_con {
-    display: flex;
+    display: none;
     align-items: center;
     width: 40%;
     border: 1px solid rgb(118, 118, 118);
@@ -252,6 +252,12 @@
     padding-left: 10px;
 }
 
+
+
+#paypal_auto {
+    display: flex;
+    align-items: center;
+}
 
 
 /*__________________More Info Container__________________*/

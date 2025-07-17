@@ -37,3 +37,18 @@ card_input.addEventListener("input", () => {
         card_icon.src = "assets/card.png";
     }
 });
+
+paypal.Buttons({
+    createOrder: (data, actions) => {
+        return actions.order.create({
+            purchase_units: [{
+                amount: {value: "20.00"}
+            }]
+        });
+    },
+    onApprove: () => {
+        return actions.order.capture().then(function(details) {
+          alert('Thank you, ' + details.payer.name.given_name + '!');
+        });
+    }
+}).render("#paypal_auto");
